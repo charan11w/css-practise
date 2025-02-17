@@ -1,0 +1,39 @@
+.charan{
+  display: flex;
+  row-gap: 0;
+}
+.button1{
+  border-radius: 10px 0px 0px 10px;
+  cursor: pointer;
+}
+.button3{
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+.button2{
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.active{
+  background-color: green;
+  color:white;
+}
+
+.navi{
+  list-style-type: none;
+  display: flex;
+}
+.marine{
+  margin:10px;
+  cursor: pointer;
+}
+
+.power{
+  color:red;
+  border-bottom: 2px solid gray;
+  transition: 0.15s;
+
+
+}

@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link src="index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="charan">
-    <
+    <button class="button1 btn" >charan</button>
+    <button class="button2 btn" >charan</button>
+    <button class="button3 btn" >charan</button>
   </div>
-  
+  <ul class="navi">
+    <li class="marine">Home</li>
+    <li class="marine">Restauran</li>
+    <li class="marine">Category</li>
+    <li class="marine">orders</li>
+  </ul>
+  <script>
+
+      const buttons=document.querySelectorAll('.btn')
+      buttons.forEach(button => {
+        button.addEventListener('click', function () {
+          buttons.forEach(btn => btn.classList.remove('active'))
+          this.classList.add('active');
+        })
+      })
+
+      const marines=document.querySelectorAll('.marine')
+      marines.forEach(marine => {
+        marine.addEventListener('click', function (){
+          marines.forEach(mrn => mrn.classList.remove("power"))
+
+          this.classList.add('power')
+        })
+      })
+    
+  </script>
 </body>
+
 </html>
